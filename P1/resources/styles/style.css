@@ -1,0 +1,142 @@
+* {
+    font-family: 'Abel', cursive;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #93A6E9;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+h1 {
+    color: white; 
+    font-size: 40pt;
+    margin: 0 3%;
+}
+h2 {
+    color: white; 
+    text-align: center; 
+    font-size: 20pt;
+}
+h3 {
+    color: black; 
+    text-align: center; 
+    font-size: 15pt;
+}
+p {
+    text-align: justify; 
+}
+.navigable li {
+    border-width: 2px 0 0 0;
+    border-style: solid;
+    border-color: #CFCDE5;
+}
+section h2 {
+    border-bottom: 1px solid #729BD9;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    background: transparent;
+    padding: 0 1%;
+}
+ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0 3%;
+}
+i {
+    font-size: 20pt; 
+    padding-right: 2%;
+}
+table {
+    width: 100%;
+}
+th {
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    padding-bottom: 5%;
+}
+ul.navigable li:hover {
+    background-image: linear-gradient(rgba(98,139,201,100) 60%,rgba(255,255,255,0));
+    transition: height 2s;
+}
+video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: -0.25vw 0.75vh 1rem #555555;
+}
+iframe {
+    border-radius: 20px;
+}
+input[type="text"] {
+    display: block;
+    font-size: 15pt;
+    width: 40%;
+    height: 10rem;
+    border-radius: 20px;
+    margin: 1% auto;
+}
+input[type="submit"] {
+    font-size: 15pt;
+    padding: 1% 4%;
+    border-radius: 10px;
+}
+#retrato{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: -0.25vw 0.75vh 1rem #555555;
+}
+.table-habilidades, .table-habilidades th, .table-habilidades td {
+    border: 2px inset #729BD9;
+}
+ul.listado {
+    text-align: center;
+}
+.head-container {
+    border-bottom: 2px solid #628BC9;
+    background-color: #729BD9;
+    position: sticky;
+    top: 0px;
+    border-radius: 0 0 20px 20px;
+}
+.foot-container {
+    border-top: 2px solid #628BC9;
+    background-color: #729BD9;
+    border-radius: 20px 20px 0 0;
+}
+.content {
+    display: grid;
+    background-color: #93A6E9;
+    grid-template-columns: 4fr 1fr;
+}
+.navigator {
+    display: flex;
+}
+.navigable {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15pt; 
+}
+.content section {
+    box-shadow: 10px 0 2% 3% black inset;
+    font-size: 15pt; 
+}
+.content section, aside {
+    margin: 4vh 3vw 3vh 3vw;
+}
+.principal, .lateral{
+    box-shadow: 0 0 5rem 1rem #7A8DD0 inset;
+}
+.nav-bars {
+    display: none;
+}
