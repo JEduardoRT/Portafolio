@@ -1,0 +1,30 @@
+<mat-list role="list">
+    <mat-list-item role="listitem"><span style="padding: 0 2% 0 0;">Nombre: </span><span>{{usuario.nombre}}</span></mat-list-item>
+    <mat-list-item role="listitem"><span style="padding: 0 2% 0 0;">Apellido: </span><span>{{usuario.apellido}}</span></mat-list-item>
+    <mat-list-item role="listitem"><span style="padding: 0 2% 0 0;">Fecha de Nacimiento: </span><span>{{usuario.fecha_nacimiento}}</span></mat-list-item>
+</mat-list>
+<button mat-flat-button>EDITAR</button>
+
+<mat-divider style="width: 100%;"></mat-divider>
+
+<div>
+    <h2>Peso</h2><button mat-flat-button>EDITAR</button>
+</div>
+<mat-list role="list">
+    <mat-list-item role="listitem"><div class="list-item"><span>Actual: </span><span>{{usuario.peso}}</span></div></mat-list-item>
+    <mat-list-item role="listitem"><div class="list-item"><span>Peso max: </span><span>{{usuario.peso_max}}</span></div></mat-list-item>
+    <mat-list-item role="listitem"><div class="list-item"><span>Peso min: </span><span>{{usuario.peso_min}}</span></div></mat-list-item>
+</mat-list>
+
+<mat-divider style="width: 100%;"></mat-divider>
+
+<div>
+    <h2>Altura</h2><button mat-flat-button>EDITAR</button>
+</div>
+<mat-list role="list">
+    <mat-list-item role="listitem"><div class="list-item"><span>Actual: </span><span>{{usuario.altura}}</span></div></mat-list-item>
+</mat-list>
+
+<mat-divider style="width: 100%;"></mat-divider>
+
+<h2>IMC</h2>

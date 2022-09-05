@@ -1,0 +1,19 @@
+.nav-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.icon-container {
+	height: 100%;
+}
+#sidenav {
+	width: 30%;
+}
+@media only screen and (max-width: 600px) {
+	#sidenav {
+		width: 67%;
+	}
+}
+mat-sidenav-content {
+	padding: 0 1.5rem;
+}

@@ -1,0 +1,16 @@
+
+<button mat-button [matMenuTriggerFor]="menu">Categorias</button>
+<mat-menu #menu="matMenu">
+    <mat-list role="list">
+        <mat-list-item role="listitem" *ngFor="let categoria of categorias"><span (click)="select(categoria.categoria);">{{categoria.categoria}}</span></mat-list-item>
+    </mat-list>
+</mat-menu>
+
+
+<mat-list role="list">
+    <mat-card style="margin-bottom: 2rem;" *ngFor="let entrenamiento of entrenamientos">
+        <mat-card-title (click)="finalizar();">{{entrenamiento.titulo}}</mat-card-title>
+        <mat-card-subtitle>{{entrenamiento.tiempo}}</mat-card-subtitle>
+        <mat-card-content>{{entrenamiento.categoria}}</mat-card-content>
+    </mat-card>
+</mat-list>

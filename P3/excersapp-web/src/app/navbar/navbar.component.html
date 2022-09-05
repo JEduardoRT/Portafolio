@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+	<mat-toolbar-row>
+		<div class="nav-container">
+			<button mat-icon-button color="accent" aria-label="Menu">  
+				<mat-icon (click)="sidenav.toggle();">menu</mat-icon>  
+			</button> 
+			
+			<div class="icon-container"> 
+				<mat-icon style="height:auto;" svgIcon="excers_icon"></mat-icon>
+			</div> 
+		</div>
+	</mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+	<mat-sidenav #sidenav id="sidenav">
+		<mat-nav-list>
+			<a (click)="sidenav.close();" routerLink="/home" mat-list-item style="background-color=black;">Página Principal</a>
+			<a (click)="sidenav.close();" mat-list-item style="background-color=black;">Informe</a>
+			<a (click)="sidenav.close();" routerLink="/perfil" mat-list-item style="background-color=black;">Perfil</a>
+			<a (click)="sidenav.close();" mat-list-item style="background-color=black;">Configuración</a>
+			<a (click)="sidenav.close();" routerLink="/acerca" mat-list-item style="background-color=black;">Acerca de la aplicación</a>
+		</mat-nav-list>
+	</mat-sidenav>
+	<mat-sidenav-content>
+		<div style="height: 92.5vh;"> 
+				<router-outlet></router-outlet>
+		</div> 
+	</mat-sidenav-content>
+</mat-sidenav-container>
